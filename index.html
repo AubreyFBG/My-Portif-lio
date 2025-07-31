@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Luis Ricardo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .name {
+      background: #111;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .name img {
+      width: 250px;
+      max-width: 90vw;
+      border-radius: 50%;
+    }
+
+    .name h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .botoes {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .botoes a {
+      background: #fff;
+      color: #111;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #fff;
+      transition: 0.3s;
+    }
+
+    .botoes a:hover {
+      background: #333;
+      color: #fff;
+      border-color: #333;
+    }
+
+    .sobre {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .sobre p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .projetos {
+      padding: 2rem 1rem;
+      background: #fff;
+    }
+
+    .projetos h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .projeto {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .projeto img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .projeto h3 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    .projeto p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .projeto a {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .projeto a:hover {
+      background: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      color: #fff;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="name">
+    <img src="./imga.jpg" alt="Foto de perfil">
+    <div>
+      <h1>Luis Ricardo Alves Chaves</h1>
+      <p>Desenvolvedor Fullstack • Backend JS há 6 anos • Frontend há 4 anos</p>
+      <div class="botoes">
+        <a href="https://github.com/AubreyFBG" target="_blank">GitHub</a>
+        <a href="https://discord.com/users/500383265836892161" target="_blank">Discord</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sobre">
+    <h2>Sobre mim</h2>
+    <p>
+      Me chamo Luis Ricardo, tenho 18 anos e sou apaixonado por tecnologia desde muito jovem.
+      Trabalho com JavaScript no backend há 6 anos, criando APIs robustas, bots e automações.
+      Nos últimos 4 anos, também me aprofundei no desenvolvimento Frontend, focando em interfaces modernas,
+      rápidas e intuitivas.
+      Sou um profissional completo em TI, tenho domínio tanto da programação de software quanto da parte de hardware relacionada a computadores.
+      Tenho um inglês de nível médio, consigo entender bem e me comunicar razoavelmente.
+    </p>
+  </div>
+
+  <div class="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="grid">
+      <div class="projeto">
+        <img src="imageDreamBots.png" alt="Projeto 1" />
+        <h3>Site DreamBots</h3>
+        <p>Site de gerenciamento de bots, feito utilizando React, com integração Two Auth do Discord. O backend foi desenvolvido com Node.js.</p>
+        <a href="https://dreambot.store" target="_blank">Ver Projeto</a>
+      </div>
+
+      <div class="projeto">
+        <img src="imageSailorShowRoom.png" alt="Projeto 2" />
+        <h3>Site Sailor ShowRoom</h3>
+        <p>Site para mostrar projetos, promoções e novos produtos de uma loja de skins. Feito com EJS, é um projeto simples com uma dashboard que permite adicionar imagens diretamente pelo bot da loja no Discord e exibi-las no site, além de exibir avaliações dos usuários do Discord da loja.</p>
+        <a href="https://sailorshowroom.com" target="_blank">Ver Projeto</a>
+      </div>
+
+      <div class="projeto">
+        <img src="imageMistySyncAPI.png" alt="Projeto 3" />
+        <h3>Misty Sync API</h3>
+        <p>API que reúne informações públicas do Discord e as disponibiliza gratuitamente para os usuários. Gera banners personalizados dos usuários e exibe informações sobre servidores.</p>
+        <a href="https://github.com/seu-usuario/projeto3" target="_blank">Ver Projeto</a>
+      </div>
+
+      <div class="projeto">
+        <img src="imageGeneratorSite.png" alt="Projeto 4" />
+        <h3>Página dinâmica para bots do Discord</h3>
+        <p>Site que recria a base da página automaticamente, de acordo com as cores e informações de cada bot.</p>
+        <a href="https://github.com/AubreyFBG/discord-bot-dynamic-page" target="_blank">Ver Projeto</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 - Luis Ricardo Alves Chaves
+  </footer>
+</body>
+
+</html>
